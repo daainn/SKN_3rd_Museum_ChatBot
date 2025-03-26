@@ -2,6 +2,7 @@
 팀 소개
 
 팀명 : 뮤즈(MUSE) - Multilingual Universal Storyteller Engine (다국어로 문화와 이야기를 전하는 엔진)
+
 멤버 :
 
 ### 팀원 소개
