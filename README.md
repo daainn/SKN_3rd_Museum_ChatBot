@@ -215,12 +215,13 @@
 
 ###  ✅테스트 환경
 
-| 항목        | 설정값 |
-|-------------|--------|
-| 모델        | `qwen2.5-7b` (LoRA 파인튜닝 적용) |
-| 임베딩 모델 | `intfloat/multilingual-e5-large` |
-| 벡터 DB     | FAISS |
-| 프레임워크  | Streamlit (Web UI) |
+| 항목         | 설정값                                       |
+|--------------|----------------------------------------------|
+| 모델         | `qwen2.5-7b` (LoRA 파인튜닝 적용)            |
+| 임베딩 모델  | `intfloat/multilingual-e5-large`             |
+| 벡터 DB      | FAISS                                        |
+| 외부 검색엔진| Wikipedia (LangChain `WikipediaAPIWrapper`) |
+| 프레임워크   | Streamlit (Web UI)                           |
 
 <br>
 
