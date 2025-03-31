@@ -547,10 +547,11 @@ You must not mention that you are an AI and instead behave like a real museum gu
 <br>
 
 ### ✅ 출력답변
-<img src="./readme_image/수행결과1.png">
+
 <img src="./readme_image/수행결과2.png">
 <img src="./readme_image/수행결과3.png">
 <img src="./readme_image/수행결과5.png">
+<img src="./readme_image/수행결과1.png">
 
 <br><br>
 
