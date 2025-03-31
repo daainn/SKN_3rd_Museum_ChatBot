@@ -595,7 +595,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 
 ---
 
-## 14. 추후 업데이트 계획
+# 14. 추후 업데이트 계획
 
 - **외국어 데이터셋 구축**
   - 현재 모델은 외국어 질의에 자연스럽게 응답할 수는 있으나,  
