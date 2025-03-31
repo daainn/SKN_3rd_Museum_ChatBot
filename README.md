@@ -72,9 +72,17 @@
 
 ### ✅ 프로젝트 필요성
 
-현재 국립중앙박물관 애플리케이션에는 ‘스마트전시관 챗봇’ 서비스가 제공되고 있습니다. 이 챗봇은 박물관 내 건물과 작품의 위치 안내에는 특화되어 있으나, **작품에 대한 설명이 부족하다는 한계가 존재합니다.** 따라서 관람객들이 박물관 작품을 보다 쉽고 깊이 있게 이해할 수 있도록, **작품 설명 중심의 도슨트 질의응답 챗봇의 도입이 필요한 상황**입니다.
+현재 국립중앙박물관 애플리케이션에는 ‘스마트전시관 챗봇’ 서비스가 제공되고 있으며, 박물관 내 건물과 전시품의 위치를 효과적으로 안내하는 데 특화되어 있습니다.
 
-또한 기존 챗봇 서비스는 다국어 지원이 제공되지 않아 외국인 관람객의 접근성이 낮다는 점도 개선이 요구됩니다. 이에 따라 **다양한 언어를 지원하는 질의응답형 챗봇 개발이 필요**합니다.
+저희는 여기서 한 걸음 더 나아가, **작품에 대한 충분한 맥락과 이해를 제공하는 기능이 더해진다면**  관람객의 **이해도와 몰입도**를 더욱 높일 수 있을 것이라 판단하였습니다.  
+이에 따라 본 프로젝트는 **작품 설명에 특화된 질의응답형 도슨트 챗봇**의 필요성을 바탕으로 기획되었습니다.
+
+또한 최근 다양한 분야에서 사용자 맞춤형 서비스가 확대되는 흐름에 따라, 본 챗봇에  
+- **다국어 지원 기능**을 통해 외국인 관람객의 접근성을 높이고  
+- **음성 기반 설명 기능**으로 시각 외 정보 전달 방식을 확장하며  
+- **연령별 맞춤 콘텐츠 제공**을 통해 다양한 관람층의 수요를 반영하는 등  
+
+사용자 중심의 기능들을 추가하여 **보다 포괄적이고 몰입감 있는 박물관 관람 경험**을 구현하고자 하였습니다.
 
 
 <table align="center">
@@ -87,6 +95,8 @@
     </td>
   </tr>
 </table>
+> 현재 국립중앙박물관 챗봇 서비스에는 작품 설명에 관한 챗봇 시스템은 따로 구현되어 있지 않습니다.
+
 
 ### ✅ 프로젝트 목표
 - 전시품 설명에 특화된 질의응답형 챗봇 서비스 개발
@@ -105,14 +115,15 @@
 
 
 | **Language** | **Development** | **Embedding Model** | **Vector DB** | **LLM Model** | **Framework** | **Demo** | **Collaboration Tool** |
-|--------------|------------------|----------------|----------------|----------------|----------------|-------------|--------------------|
-| ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white)<br>![Colab](https://img.shields.io/badge/-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)<br>![RunPod](https://img.shields.io/badge/-RunPod-5F43DC?logo=cloud&logoColor=white) | ![Hugging Face](https://img.shields.io/badge/-HuggingFace-FFD21F?logo=huggingface&logoColor=black) | ![FAISS](https://img.shields.io/badge/-FAISS-009999?logo=meta&logoColor=white) | ![Qwen](https://img.shields.io/badge/-Qwen-8A2BE2?logo=alibaba&logoColor=white)<br>![Gemma V3](https://img.shields.io/badge/-Gemma%20V3-4285F4?logo=google&logoColor=white) | ![LangChain](https://img.shields.io/badge/-LangChain-F9AB00?logo=LangChain&logoColor=white) | ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white) | ![Discord](https://img.shields.io/badge/-Discord-5865F2?logo=discord&logoColor=white)<br>![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)<br>![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white) |
+|--------------|------------------|----------------------|----------------|----------------|----------------|-------------|--------------------|
+| ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white)<br>![Colab](https://img.shields.io/badge/-Google%20Colab-F9AB00?logo=googlecolab&logoColor=white)<br>![RunPod](https://img.shields.io/badge/-RunPod-5F43DC?logo=cloud&logoColor=white) | ![Hugging Face](https://img.shields.io/badge/-HuggingFace-FFD21F?logo=huggingface&logoColor=black)<br><sub><a href="https://huggingface.co/intfloat/multilingual-e5-large">모델 주소</a></sub> | ![FAISS](https://img.shields.io/badge/-FAISS-009999?logo=meta&logoColor=white) | ![Qwen](https://img.shields.io/badge/-Qwen-8A2BE2?logo=alibaba&logoColor=white)<br>![Gemma V3](https://img.shields.io/badge/-Gemma%20V3-4285F4?logo=google&logoColor=white)<br><sub>:현재 개발중</sub> | ![LangChain](https://img.shields.io/badge/-LangChain-F9AB00?logo=LangChain&logoColor=white) | ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white) | ![Discord](https://img.shields.io/badge/-Discord-5865F2?logo=discord&logoColor=white)<br>![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)<br>![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white) |
+
 
 <br><br>
 
 # 4. 시스템 아키텍처
 <div align="center">
-  <img src="./readme_image/system_architecture.png" width="700" height="600">
+  <img src="./readme_image/architecture2.png" width="700" height="600">
 </div>
 
 
@@ -181,7 +192,6 @@
 
 # 8. 벡터 DB 구축
 
-* 문서 검색 시 FAISS와 Chroma의 성능이 비슷하다는 사실을 확인.
 * 추후 업데이트 시 전국 박물관 데이터 수집을 고려하여 대규모 데이터를 다룰 수 있는 FAISS로 벡터 DB선정
 
 **사용한 벡터 DB : FAISS**
@@ -206,7 +216,7 @@
 | 항목        | 설정값 |
 |-------------|--------|
 | 모델        | `qwen2.5-7b` (LoRA 파인튜닝 적용) |
-| 임베딩 모델 | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
+| 임베딩 모델 | `intfloat/multilingual-e5-large` |
 | 벡터 DB     | FAISS |
 | 프레임워크  | Streamlit (Web UI) |
 
@@ -233,8 +243,8 @@
 |------|------|------|
 |응답 정확도 | `겨울 산수에 대해 알려줘` | `이 겨울 산수 그림은 김수철의 작품으로 조선 말기 유행하던 이색적인 화풍을 보여줍니다. 간략한 필치와 단순한 형태로 표현되었으며 엷지만 선명한 색채가 돋보입니다. 마지막 폭에는 눈 덮인 산 속에서 갓과 도롱이를 입고 길을 가는 사람들의 광경이 묘사되어 있습니다. 이러한 특징들은 당시 화가들이 새로운 감각을 추구하려는 시도를 보여주고 있습니다.`|
 | 🇺🇸 English 질의 응답 | `Tell me about winter landscape painting` | `Certainly! Let's explore some notable winter landscape paintings that capture the essence of cold and serene environments.One such painting is "Heachilmunseok" which translates to "Evening Snow in the Mountains and Fields....` |
-| 🇯🇵 日本語 질의 응답  | 冬景山水図について教えて |  |
-| 존재하지 않는 유물 대응 | `김치 화병이라는 작품에 대해서 알려줘`| |
+| 🇯🇵 日本語 질의 응답  | 冬景山水図について教えて | `冬の山水作品では、筆致は簡潔で、形態は単純ながらも色調は薄く鮮やかです。山と岩を淡い墨色で描き、苔点を施して装飾的な効果を強調しています。この作品は冬の風景を表現しており、静けさと厳しさを感じさせます。淡い色彩と細かい筆致は、冬の景色の特徴を巧みに捉えています。また、苔点の使用は、寒さの中にも生命力を感じさせる要素となっています。関連する画像URL: https://www.example.com/winter_scenery_painting.jpg` |
+| 키워드 추출 능력 | `겨울 산수 작품의의 핵심 키워드는?` | |
 
 <br>
 
@@ -242,7 +252,7 @@
 
 | 문제 유형 | 질의 | 응답 | 문제 |
 |-----------|------|------|--------|
-| 키워드 추출 능력 | `겨울 산수 작품의의 핵심 키워드는?` |  | 핵심 키워드가 아닌 전체 설명을 출력|
+| 존재하지 않는 유물 대응 |`김치 화병이라는 작품에 대해서 알려줘` |  | 유사도가 가장 높은 문서를 해당 유물로 오인 |
 | 유사 유물로 오인한 응답 | `백자 항아리라는 작품에 대해서 설명해줘` |  | 백자 항아리에 대한 질문 → 분청사기 설명 출력|
 
 
@@ -391,7 +401,8 @@ Another example is also titled "Heachilmunseok," showcasing similar themes of wi
 - **한/영/일 시스템 프롬프트 분리 적용**: 입력 언어를 자동으로 감지하여 해당 언어로 자연스럽게 응답할 수 있도록 설계하였음.
 - **출처 기반 응답**: 불확실하거나 내부 문서에 존재하지 않는 정보에 대해서는 '정보를 드릴 수 없습니다' 등의 표현으로 정직하게 응답하도록 설정.
 - **문장 중복 출력 방지**: 동일한 문장이 반복되지 않도록 프롬프트 내 중복 방지 조건을 반영함.
-- **할루시네이션 개선**: 허구의 정보를 생성하지 않도록 응답 규칙을 강화하고, 실제 근거 기반으로 답변하도록 유도함.
+- **할루시네이션 개선**: 허구의 정보를 생성하지 않도록 응답 규칙을 강화하고, 실제 근거 기반으로 답변하도록 유도함. 
+- **연령별 설명 테마 강화** : 연령대별 이해 수준과 언어 스타일을 고려한 맞춤형 설명 기능을 구현하기 위해 사용자 연령대(예: 아동/청소년/성인)에 따른 맞춤형 프롬프트를 작성
 
 
 >**최종 System Prompt (한/영/일)는 아래 토글에서 확인할 수 있습니다.**
@@ -494,8 +505,9 @@ Examples:
 
 ---
 
-# 11. 수행결과(테스트/시연 페이지)
-
+# 11. 수행결과(시연 페이지)
+<img src="./readme_image/수행결과1.png">
+<img src="./readme_image/수행결과2.png">
 
 <br><br>
 
@@ -516,16 +528,8 @@ Examples:
 
 - **외국어 데이터셋 구축**
   - 현재 모델은 외국어 질의에 자연스럽게 응답할 수는 있으나,  
-    외국어로 입력된 질문이 벡터 DB 내 한글 기반 문서와 제대로 매칭되지 않는 문제가 존재.
-  - 이를 해결하기 위해, **다국어 기반의 문서 임베딩 모델을 적용**하거나,  
-    **외국어로 번역된 유물 설명 데이터셋을 추가 구축**하는 방향을 검토 중.
-<br>
-
-- **연령별 설명 테마 강화**
-  - 박물관 유물 설명에는 성인 중심의 어려운 용어나 문화 코드가 포함되어 있어  
-    **연령대별 이해 수준과 언어 스타일을 고려한 맞춤형 설명 기능**이 필요함.
-  - 추후에는 사용자 연령대(예: 아동/청소년/성인)에 따라 **내용 난이도와 말투를 조정한 테마**를 제공할 예정.
-  - 또한, 챗봇 음성 응답 기능과 연계하여 **사용자가 취향에 맞는 목소리를 선택해 들을 수 있는 기능**도 도입할 계획임.
+    외국어로 입력된 질문이 벡터 DB 내 한글 기반 문서와 완벽히 매칭되지 않는 문제가 존재.
+  - 이를 해결하기 위해, **외국어로 번역된 유물 설명 데이터셋을 추가 구축**하는 방향을 검토 중.
 <br>
 
 - **유물 데이터 추가 확보**
@@ -538,7 +542,7 @@ Examples:
 
 # 14. 한 줄 회고
 - 🤭김영서: 
-- 🙃이광운:
+- 🙃이광운: 기존에 사용했던 챗봇에 불만이 많았는데 많은 사람들의 시간과 비용이 투여했다는 사실을 몸소 느낌. 모델선정부터 결과출력까지 시간과 비용적으로 리소스가 많이들어 테스크 분배와 빠른 결단의 중요성을 느낌
 - 🫡이다인: 여러 모델을 대상으로 질의응답 테스트를 진행하는 과정에서, 모델마다 요구하는 프롬프트 형식이나 파인튜닝 데이터 구조가 다르다는 점을 체감하였습니다. 또한 모델별로 사용되는 라이브러리 및 패키지 호환성이 상이하여, 새로운 모델을 테스트할 때마다 환경 설정과 패키지 버전 관리에 어려움을 겪었습니다. 이번 작업을 통해 모델별 독립적인 개발 환경을 관리하는 것의 중요성을 깨달았으며, requirements.txt 등을 활용하여 환경 구성을 명확하게 정리해두는 습관이 필수적임을 인지하게 되었습니다.
 - 😊임수연: 여러 모델들을 조합해보며 단순히 좋은 모델을 잘 골라서 사용하는 것이 아닌 모델 간의 호환성이나 로딩 방식의 차이에 따라 시스템의 안정성과 성능의 차이가 발생한다는 점, 그리고 프롬프트 설계와 파라미터 조정 등의 간단한 방법으로도 성능이 크게 개선될 수 있다는 것을 배울 수 있었습니다. 또한, 이번에 개발 환경과 비용의 문제로 시도해보지 못했던 방법들을 추후에 적용해보고 싶습니다.
 - 🫠조이현:
