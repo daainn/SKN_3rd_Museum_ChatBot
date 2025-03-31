@@ -121,13 +121,14 @@
 
 <br><br>
 
+---
+
 # 4. 시스템 아키텍처
+
 <div align="center">
-  <img src="./readme_image/architecture2.png" width="700" height="600">
+  <img src="./readme_image/architecture2.png">
 </div>
 
-
-<br><br>
 
 ---
 
@@ -506,8 +507,16 @@ Examples:
 ---
 
 # 11. 수행결과(시연 페이지)
+
+### ✅ 시연 결과
+![시연 GIF](./readme_image/screen.gif)
+
+<br>
+
+### ✅ 출력답변
 <img src="./readme_image/수행결과1.png">
 <img src="./readme_image/수행결과2.png">
+<img src="./readme_image/수행결과3.png">
 
 <br><br>
 
