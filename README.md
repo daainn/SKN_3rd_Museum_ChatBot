@@ -550,7 +550,6 @@ You must not mention that you are an AI and instead behave like a real museum gu
 <img src="./readme_image/수행결과1.png">
 <img src="./readme_image/수행결과2.png">
 <img src="./readme_image/수행결과3.png">
-<img src="./readme_image/수행결과4.png">
 <img src="./readme_image/수행결과5.png">
 
 <br><br>
