@@ -123,7 +123,6 @@
 ---
 
 # 4. 시스템 아키텍처
-
 <div align="center">
   <img src="./readme_image/architecture2.png">
 </div>
