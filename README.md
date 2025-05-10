@@ -94,6 +94,7 @@
     </td>
   </tr>
 </table>
+
 > 현재 국립중앙박물관 챗봇 서비스에는 작품 설명에 관한 챗봇 시스템은 따로 구현되어 있지 않습니다.
 
 
@@ -520,7 +521,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 
 ---
 
-# 11. 수행결과(시연 페이지)
+# 9. 수행결과(시연 페이지)
 
 ### ✅ 시연 결과
 ![시연 GIF](./readme_image/screen.gif)
@@ -536,7 +537,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 <br><br>
 
 ---
-# 12. 디렉토리 구조
+# 10. 디렉토리 구조
 ```
 │  app.py
 │  Embedding_model_changed.ipynb
@@ -567,7 +568,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 
 ---
 
-# 13. 결론
+# 11. 결론
 
 본 프로젝트에서는 LLM 기반의 다국어 도슨트 챗봇을 개발하여, 박물관 전시품에 대한 정보 접근성을 높이는 것을 목표로 진행하였습니다.
 그 과정에서 다국어 입력에 유연하게 대응하고 문화적 맥락을 반영한 응답 생성을 위해 Qwen2.5-7B 모델을 최종 선정하고 파인튜닝을 수행하였으며, 외부 지식 연동(RAG), 문장 단위 청킹, 한자 및 특수문자 보존 등 다양한 전처리 전략을 적용함으로써, 질의응답 정확도와 문맥 이해도를 향상시켰습니다.
@@ -578,7 +579,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 
 ---
 
-# 14. 추후 업데이트 계획
+# 12. 추후 업데이트 계획
 
 - **외국어 데이터셋 구축**
   - 현재 모델은 외국어 질의에 자연스럽게 응답할 수는 있으나,  
@@ -599,7 +600,7 @@ You must not mention that you are an AI and instead behave like a real museum gu
 <br>
 ---
 
-# 15. 한 줄 회고
+# 13. 한 줄 회고
 - 🤭김영서: 모델 선정시 모델의 특성에 대해서 파악해야 하는 것이 중요하다고 생각했고, 프롬프트와 파인튜닝에 따라 성능 차이가 보여지는 것을 알게 되었다. 프로젝트를 진행하면서 오류를 해결하는 것에 시간이 꽤 투자 되었지만, 이를 계기로 오류를 이해하고 해결하는 능력이 발전할 수 있었다. 
 - 🙃이광운: 기존에 사용했던 챗봇에 불만이 많았는데 많은 사람들의 시간과 비용이 투여했다는 사실을 몸소 느낌. 모델선정부터 결과출력까지 시간과 비용적으로 리소스가 많이들어 테스크 분배와 빠른 결단의 중요성을 느낌
 - 🫡이다인: 여러 모델을 대상으로 질의응답 테스트를 진행하는 과정에서, 모델마다 요구하는 프롬프트 형식이나 파인튜닝 데이터 구조가 다르다는 점을 체감하였습니다. 또한 모델별로 사용되는 라이브러리 및 패키지 호환성이 상이하여, 새로운 모델을 테스트할 때마다 환경 설정과 패키지 버전 관리에 어려움을 겪었습니다. 이번 작업을 통해 모델별 독립적인 개발 환경을 관리하는 것의 중요성을 깨달았으며, requirements.txt 등을 활용하여 환경 구성을 명확하게 정리해두는 습관이 필수적임을 인지하게 되었습니다.
